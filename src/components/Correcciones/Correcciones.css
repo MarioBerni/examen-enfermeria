@@ -40,3 +40,19 @@ button {
 button:hover {
   background-color: #0056b3; /* Color azul oscuro */
 }
+
+/* Estilos para las diferentes clases de puntajes */
+.puntaje-alto {
+  color: #4CAF50; /* Verde */
+  font-weight: bold;
+}
+
+.puntaje-medio {
+  color: #FFA500; /* Naranja */
+  font-weight: bold;
+}
+
+.puntaje-bajo {
+  color: #FF0000; /* Rojo */
+  font-weight: bold;
+}
