@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './Preguntas.css'; // Asumiendo que el archivo CSS se llama Preguntas.css y está en la misma carpeta
-import BasicCorrection from '../Correcciones/BasicCorrection'; // Asegúrate de que la ruta sea correcta
+import './Preguntas.css'; 
+import BasicCorrection from '../Correcciones/BasicCorrection';
 
-const BasicExamen = ({ reiniciarExamen }) => { // Recibe la función reiniciarExamen como prop
-  const [preguntaActual, setPreguntaActual] = useState(0);  // Nuevo estado para controlar el índice de la pregunta actual
-  const [opcionesSeleccionadas, setOpcionesSeleccionadas] = useState({}); // Estado para almacenar las opciones seleccionadas
-  const [enviarExamen, setEnviarExamen] = useState(false); // Nuevo estado para controlar si se debe enviar el examen
+const BasicExamen = ({ reiniciarExamen }) => {
+  const [preguntaActual, setPreguntaActual] = useState(0);
+  const [opcionesSeleccionadas, setOpcionesSeleccionadas] = useState({});
+  const [enviarExamen, setEnviarExamen] = useState(false);
 
   const preguntasBasicas = [
     {

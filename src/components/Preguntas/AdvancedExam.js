@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import './Preguntas.css'; // Mantengo la misma hoja de estilos, suponiendo que las clases son reutilizables
-import AdvancedCorrection from '../Correcciones/AdvancedCorrection'; // Asegúrate de que la ruta sea correcta
+import './Preguntas.css';
+import AdvancedCorrection from '../Correcciones/AdvancedCorrection';
 
-const AdvancedExam = ({ reiniciarExamen }) => { // Cambiado el nombre del componente y la prop que recibe
+const AdvancedExam = ({ reiniciarExamen }) => {
   const [preguntaActual, setPreguntaActual] = useState(0);
   const [opcionesSeleccionadas, setOpcionesSeleccionadas] = useState({});
   const [enviarExamen, setEnviarExamen] = useState(false);
 
-  // Aquí irían tus preguntas avanzadas, asegúrate de actualizar este array
   const preguntasAvanzadas = [
     {
       pregunta: "1. ¿Qué implica una Hemoglobina glicosilada ≥ 6% en el contexto de diabetes gestacional?",

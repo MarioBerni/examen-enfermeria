@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './Preguntas.css'; // Asumiendo que el archivo CSS se llama Preguntas.css y está en la misma carpeta
-import IntermediateCorrection from '../Correcciones/IntermediateCorrection'; // Asegúrate de que la ruta sea correcta
+import './Preguntas.css';
+import IntermediateCorrection from '../Correcciones/IntermediateCorrection';
 
-const IntermediateExamen = ({ reiniciarExamen }) => { // Recibe la función reiniciarExamen como prop
-  const [preguntaActual, setPreguntaActual] = useState(0);  // Nuevo estado para controlar el índice de la pregunta actual
-  const [opcionesSeleccionadas, setOpcionesSeleccionadas] = useState({}); // Estado para almacenar las opciones seleccionadas
-  const [enviarExamen, setEnviarExamen] = useState(false); // Nuevo estado para controlar si se debe enviar el examen
+const IntermediateExamen = ({ reiniciarExamen }) => {
+  const [preguntaActual, setPreguntaActual] = useState(0);
+  const [opcionesSeleccionadas, setOpcionesSeleccionadas] = useState({});
+  const [enviarExamen, setEnviarExamen] = useState(false);
 
   const preguntasIntermedias = [
     {
@@ -248,7 +248,7 @@ const IntermediateExamen = ({ reiniciarExamen }) => { // Recibe la función rein
   return (
     <div className="examen-container">
       {enviarExamen ? (
-        <IntermediateCorrection opcionesSeleccionadas={opcionesSeleccionadas} preguntasIntermedias={preguntasIntermedias} reiniciarExamen={reiniciarExamen} /> // Pasa la función reiniciarExamen como prop
+        <IntermediateCorrection opcionesSeleccionadas={opcionesSeleccionadas} preguntasIntermedias={preguntasIntermedias} reiniciarExamen={reiniciarExamen} />
       ) : (
         <div>
           <div className="pregunta-container">
@@ -271,13 +271,12 @@ const IntermediateExamen = ({ reiniciarExamen }) => { // Recibe la función rein
               </div>
             ))}
           </div>
-          {/* Botones para navegar entre preguntas */}
           <button className="nav-button" onClick={anteriorPregunta} disabled={preguntaActual === 0}>Anterior</button>
           {preguntaActual === preguntasIntermedias.length - 1 ? (
             <button
               className="enviar-button"
               onClick={() => {
-                setEnviarExamen(true); // Cambiar el estado a true para enviar el examen
+                setEnviarExamen(true);
               }}
             >
               Enviar
