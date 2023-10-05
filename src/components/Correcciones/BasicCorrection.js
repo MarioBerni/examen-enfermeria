@@ -5,12 +5,21 @@ import './Correcciones.css';
 
 const calcularPuntaje = (preguntasBasicas, opcionesSeleccionadas) => {
   let puntaje = 0;
+  let preguntasIncorrectas = [];
+  
   preguntasBasicas.forEach((pregunta, index) => {
     if (opcionesSeleccionadas[index] && opcionesSeleccionadas[index][0] === pregunta.respuestaCorrecta) {
       puntaje += 0.5;
+    } else {
+      const respuestaCorrectaTexto = pregunta.opciones.find(opcion => opcion.startsWith(pregunta.respuestaCorrecta)).substring(3);
+      preguntasIncorrectas.push({
+        pregunta: pregunta.pregunta,
+        respuestaCorrecta: respuestaCorrectaTexto
+      });
     }
   });
-  return puntaje;
+
+  return { puntaje, preguntasIncorrectas };
 };
 
 const clasesPuntaje = {
@@ -21,8 +30,7 @@ const clasesPuntaje = {
 
 const BasicCorrection = ({ opcionesSeleccionadas, preguntasBasicas, reiniciarExamen }) => {
   const navigate = useNavigate();
-  console.log("Opciones seleccionadas:", opcionesSeleccionadas);
-  const puntaje = calcularPuntaje(preguntasBasicas, opcionesSeleccionadas);
+  const { puntaje, preguntasIncorrectas } = calcularPuntaje(preguntasBasicas, opcionesSeleccionadas);
   let mensaje = '';
   let classNamePuntaje = '';
 
@@ -50,6 +58,16 @@ const BasicCorrection = ({ opcionesSeleccionadas, preguntasBasicas, reiniciarExa
     <div className="examen-container">
       <h1>Resultado del Examen Básico</h1>
       <p className={classNamePuntaje}>{mensaje}</p>
+      { preguntasIncorrectas.length > 0 &&
+        <div>
+          <h2>Preguntas incorrectas:</h2>
+          <ul>
+            {preguntasIncorrectas.map((item, index) => (
+              <li key={index}>{item.pregunta} (Respuesta correcta: {item.respuestaCorrecta})</li>
+            ))}
+          </ul>
+        </div>
+      }
       <button onClick={irAInicio}>Intentarlo nuevamente</button>
     </div>
   );

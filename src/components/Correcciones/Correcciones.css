@@ -56,3 +56,39 @@ button:hover {
   color: #FF0000; /* Rojo */
   font-weight: bold;
 }
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  color: red;
+  margin: 5px 0;
+}
+
+/* Estilos existentes... */
+
+.puntaje-alto {
+  color: #4CAF50; /* Verde */
+  font-weight: bold;
+  background-color: #DFFFD9; /* Verde claro */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.puntaje-medio {
+  color: #FFA500; /* Naranja */
+  font-weight: bold;
+  background-color: #FFF5DA; /* Amarillo claro */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.puntaje-bajo {
+  color: #FF0000; /* Rojo */
+  font-weight: bold;
+  background-color: #FFDADA; /* Rojo claro */
+  padding: 10px;
+  border-radius: 5px;
+}

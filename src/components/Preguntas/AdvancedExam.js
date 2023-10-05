@@ -9,222 +9,222 @@ const AdvancedExam = ({ reiniciarExamen }) => {
 
   const preguntasAvanzadas = [
     {
-      pregunta: "1. ¿Qué implica una Hemoglobina glicosilada ≥ 6% en el contexto de diabetes gestacional?",
+      pregunta: "1. ¿Cuál es el objetivo principal de la Ley 18.987?",
       opciones: [
-        "A) Diabetes Manifiesta",
-        "B) Control metabólico óptimo",
-        "C) No tiene relevancia"
+          "A) Penalizar la interrupción del embarazo.",
+          "B) Despenalizar la interrupción del embarazo bajo ciertas condiciones.",
+          "C) Promover la planificación familiar."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "2. ¿Qué establece el Art. 325 y 325 bis del Código del Proceso Penal?",
+      opciones: [
+          "A) Establece una pena de seis a veinticuatro meses de prisión para quien colabore en el aborto con consentimiento de la mujer.",
+          "B) Penaliza el aborto sin consentimiento de la mujer.",
+          "C) Establece una pena de prisión de dos a cinco años para quien realice un aborto."
       ],
       respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "2. ¿Qué rango de valores de PTOG a la hora se considera para el diagnóstico de diabetes gestacional?",
+  },
+  {
+      pregunta: "3. ¿Qué no constituye la interrupción voluntaria del embarazo según la ley?",
       opciones: [
-        "A) ≥ a 1.60 g/dl",
-        "B) ≥ a 1.70 g/dl",
-        "C) ≥ a 1.80 g/dl"
+          "A) Un derecho humano.",
+          "B) Un instrumento de control de los nacimientos.",
+          "C) Un acto médico."
       ],
-      respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "3. ¿Cuál es la cantidad mínima de UI/Kg de peso actual / día para iniciar el tratamiento con insulina?",
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "4. ¿Qué debe acreditar una extranjera para acceder al IVE?",
       opciones: [
-        "A) 0.1 a 0.2 UI/Kg",
-        "B) 0.3 a 0.4 UI/Kg",
-        "C) 0.5 a 0.6 UI/Kg"
+          "A) Residencia habitual en el territorio durante un período no inferior a un año.",
+          "B) Ciudadanía uruguaya.",
+          "C) Seguro médico internacional."
       ],
       respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "4. ¿Qué tipo de insulina se administrará cuando se observen hiperglucemias en ayunas o preprandiales?",
+  },
+  {
+      pregunta: "5. ¿Qué se evalúa en la primera consulta médica para el IVE?",
       opciones: [
-        "A) Insulinas rápidas",
-        "B) Insulinas lentas (Cristalina y/o NPH)",
-        "C) Insulinas de acción prolongada"
+          "A) La capacidad económica de la mujer.",
+          "B) Las circunstancias que han sobrevenido la concepción.",
+          "C) El estado civil de la mujer."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "5. ¿Qué implica la exposición fetal en el tratamiento materno con fármacos?",
+  },
+  {
+      pregunta: "6. ¿Qué institución está encargada de amparar actividades para el subsidio por maternidad?",
       opciones: [
-        "A) Es siempre evitable",
-        "B) Es casi siempre inevitable",
-        "C) No tiene relevancia"
+          "A) Ministerio de Salud Pública.",
+          "B) Banco de Previsión Social.",
+          "C) Instituto del Niño y Adolescente del Uruguay."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "6. ¿Cuál es el principal enfoque de la clasificación del riesgo fetal de la FDA?",
+  },
+  {
+      pregunta: "7. ¿Qué pasa si el recién nacido necesita tratamiento domiciliario por alguna afección?",
       opciones: [
-        "A) Costo-beneficio",
-        "B) Efectividad del fármaco",
-        "C) Estudios humanos y animales"
+          "A) No afecta el período de amparo.",
+          "B) El período de amparo puede extenderse hasta que el niño cumpla 6 meses.",
+          "C) Se corta el subsidio."
       ],
-      respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "7. ¿Qué fármacos de la Clase A son ejemplos claros de disminución del riesgo de defectos congénitos?",
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "8. ¿Qué tipo de trabajadoras tienen derecho al subsidio por maternidad?",
       opciones: [
-        "A) Ácido fólico y yodo",
-        "B) Vitamina C y D",
-        "C) Aspirina y paracetamol"
+          "A) Solo trabajadoras dependientes.",
+          "B) Trabajadoras dependientes, no dependientes, y titulares de empresas monotributistas.",
+          "C) Solo trabajadoras en el sector público."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "9. ¿Cuál es el mínimo de semanas de descanso que establece la Ley 19161?",
+      opciones: [
+          "A) 14 semanas.",
+          "B) 16 semanas.",
+          "C) 18 semanas."
       ],
       respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "8. ¿Qué categorías de fármacos de la FDA están contraindicadas durante la gestación?",
+  },
+  {
+      pregunta: "10. ¿Se pueden variar los períodos de licencia con autorización del BPS?",
       opciones: [
-        "A) A y B",
-        "B) C y D",
-        "C) X"
-      ],
-      respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "9. ¿Qué precauciones se deben tomar antes de la instauración de cualquier tratamiento durante el embarazo según la FDA?",
-      opciones: [
-        "A) Debe plantearse con cautela, utilizando siempre las dosis menores",
-        "B) Debe hacerse sin considerar el riesgo fetal",
-        "C) Debe hacerse solo con fármacos de la Clase A"
+          "A) Sí.",
+          "B) No.",
+          "C) Solo en casos excepcionales."
       ],
       respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "10. ¿Qué indica un índice de proteinuria-creatinuria mayor o igual a 0.3g/g en el contexto de preeclampsia?",
+  },
+  {
+      pregunta: "11. ¿Qué tipo de infraestructura se busca fortalecer en el nivel primario de atención según la Ley 18.426?",
       opciones: [
-        "A) Enfermedad renal crónica",
-        "B) Daño hepático",
-        "C) Daño endotelial"
-      ],
-      respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "11. ¿Cuál es la dosis de Alfametildopa para tratar la hipertensión crónica en el embarazo?",
-      opciones: [
-        "A) 250mg c/6hs",
-        "B) 500mg c/12hs",
-        "C) Ambas son correctas"
-      ],
-      respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "12. ¿Qué se busca controlar con la indicación de Calcio en el tratamiento de estados hipertensivos del embarazo?",
-      opciones: [
-        "A) Mejorar la salud ósea",
-        "B) Prevenir la evolución a Preeclampsia",
-        "C) Reducir los niveles de colesterol"
+          "A) Solo infraestructura física.",
+          "B) Infraestructura y capacidad de los recursos humanos y materiales.",
+          "C) Solo recursos materiales."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "13. ¿Cómo se diagnostica la hipertensión gestacional?",
+  },
+  {
+      pregunta: "12. ¿Qué se busca impulsar en la población según los objetivos generales de las políticas y programas de Salud sexual y reproductiva?",
       opciones: [
-        "A) Dos registros tensionales separados idealmente de 4 a 6hs",
-        "B) Un solo registro tensional mayor o igual a 140/90 mmHg",
-        "C) Por la presencia de síntomas como cefalea occipitofrontal"
+          "A) Medidas de promoción de la salud y prevención de la enfermedad.",
+          "B) Solo medidas de promoción de la salud.",
+          "C) Solo medidas de prevención de la enfermedad."
       ],
       respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "14. ¿Qué implica el término 'Enfermedad multisistémica' en el contexto de preeclampsia?",
+  },
+  {
+      pregunta: "13. ¿Qué se busca garantizar para las personas institucionalizadas o en tratamiento asistencial?",
       opciones: [
-        "A) Afecta solo al sistema cardiovascular",
-        "B) Afecta múltiples sistemas del cuerpo",
-        "C) No tiene relevancia clínica"
+          "A) Solo acceso a medicación.",
+          "B) Respeto a los derechos sexuales y reproductivos.",
+          "C) Solo privacidad y confidencialidad."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "15. ¿Qué implica la sensibilización en el contexto de incompatibilidad Rh?",
+  },
+  {
+      pregunta: "14. ¿Qué se promueve para el intercambio de información y educación para la salud según la Ley 18.426?",
       opciones: [
-        "A) Generación de anticuerpos regulares",
-        "B) Generación de anticuerpos irregulares",
-        "C) Ausencia de anticuerpos"
-      ],
-      respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "16. ¿Qué riesgo implica la incompatibilidad Rh sin tratamiento profiláctico?",
-      opciones: [
-        "A) Riesgo de diabetes gestacional",
-        "B) Riesgo de aloinmunización",
-        "C) Riesgo de infecciones"
-      ],
-      respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "17. ¿Cuál es la importancia de realizar una exhaustiva Anamnesis en el diagnóstico de incompatibilidad Rh?",
-      opciones: [
-        "A) Conocer antecedentes obstétricos y posibles eventos inmunizantes anteriores",
-        "B) Evaluar el estado emocional de la madre",
-        "C) Obtener información sobre el historial médico general de la madre"
+          "A) Coordinación interinstitucional y participación de redes sociales.",
+          "B) Solo coordinación interinstitucional.",
+          "C) Solo participación de redes sociales."
       ],
       respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "18. ¿Qué se busca evitar con la administración de medicación profiláctica en madres Rh negativo?",
+  },
+  {
+      pregunta: "15. ¿Qué comprenden los derechos sexuales según la Ley 18.426?",
       opciones: [
-        "A) Prevenir la transmisión de enfermedades infecciosas",
-        "B) Prevenir eventos sensibilizantes",
-        "C) Prevenir el desarrollo de enfermedades crónicas"
+          "A) Solo poder decidir cuándo y cómo tener relaciones sexuales.",
+          "B) Poder decidir cuándo, cómo y con quién tener relaciones sexuales, y vivir la sexualidad sin presiones ni violencia.",
+          "C) Solo vivir la sexualidad sin presiones ni violencia."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "19. ¿Qué se entiende por Antígeno D en el contexto de incompatibilidad Rh?",
+  },
+  {
+      pregunta: "16. ¿Cuál es el principal objetivo terapéutico de las técnicas de reproducción humana asistida según la ley?",
       opciones: [
-        "A) Un antígeno inofensivo que no causa reacción",
-        "B) Un antígeno que puede causar sensibilización y generación de anticuerpos irregulares",
-        "C) Un antígeno que solo afecta a personas con Rh positivo"
+          "A) Aumentar la tasa de natalidad.",
+          "B) Tratar la infertilidad.",
+          "C) Ofrecer una alternativa a la adopción."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "20. ¿Qué implica un embarazo en vías de prolongación?",
+  },
+  {
+      pregunta: "17. ¿Qué se necesita para que una institución pueda aplicar estas técnicas?",
       opciones: [
-        "A) Menos de 37 semanas de gestación",
-        "B) Más de 41 semanas y 3 días de gestación",
-        "C) Exactamente 40 semanas de gestación"
+          "A) Solo una licencia comercial.",
+          "B) Habilitación específica del Ministerio de Salud Pública.",
+          "C) Acreditación internacional."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "21. ¿Qué se busca lograr con la inducción farmacológica del trabajo de parto?",
+  },
+  {
+      pregunta: "18. ¿Qué se considera para definir la infertilidad según la ley?",
       opciones: [
-        "A) Detener las contracciones",
-        "B) Estimular las contracciones uterinas",
-        "C) Reducir el dolor del parto"
-      ],
-      respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "22. ¿En qué casos se podría optar por una inducción mecánica del trabajo de parto?",
-      opciones: [
-        "A) Cuando el cuello uterino está maduro",
-        "B) Cuando el cuello uterino no está maduro",
-        "C) Solo en casos de emergencia"
-      ],
-      respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "23. ¿Qué es la Conducción del trabajo de parto?",
-      opciones: [
-        "A) Interrupción del trabajo de parto",
-        "B) Estimulación para iniciar el trabajo de parto",
-        "C) Guía o dirección del trabajo de parto que no progresa como se esperaba"
-      ],
-      respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "24. ¿Cuál es la importancia de realizar el Test de Bishop antes de la inducción?",
-      opciones: [
-        "A) Evaluar la madurez del cuello uterino",
-        "B) Determinar el género del bebé",
-        "C) Evaluar los niveles de azúcar en sangre"
+          "A) Tiempo de intento de concepción.",
+          "B) Edad de la mujer.",
+          "C) Número de intentos fallidos de inseminación."
       ],
       respuestaCorrecta: "A"
-    }
-  ];  
+  },
+  {
+      pregunta: "19. ¿Qué se requiere para la realización de técnicas de alta complejidad?",
+      opciones: [
+          "A) Solo el consentimiento de la mujer.",
+          "B) Constancia escrita de estudios, tratamientos y resultados.",
+          "C) Aprobación de un comité ético."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "20. ¿Qué se busca garantizar con la inclusión de estas técnicas en el Sistema Nacional Integrado de Salud?",
+      opciones: [
+          "A) Equidad en el acceso.",
+          "B) Reducción de los costos.",
+          "C) Mayor disponibilidad de médicos especialistas."
+      ],
+      respuestaCorrecta: "A"
+  },
+  {
+      pregunta: "21. ¿Cuál es el principal objetivo terapéutico de las técnicas de reproducción humana asistida según la ley?",
+      opciones: [
+          "A) Aumentar la tasa de natalidad.",
+          "B) Tratar la infertilidad.",
+          "C) Ofrecer una alternativa a la adopción."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "22. ¿Qué se necesita para que una institución pueda aplicar estas técnicas?",
+      opciones: [
+          "A) Solo una licencia comercial.",
+          "B) Habilitación específica del Ministerio de Salud Pública.",
+          "C) Acreditación internacional."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "23. ¿Qué se considera para definir la infertilidad según la ley?",
+      opciones: [
+          "A) Tiempo de intento de concepción.",
+          "B) Edad de la mujer.",
+          "C) Número de intentos fallidos de inseminación."
+      ],
+      respuestaCorrecta: "A"
+  },
+  {
+      pregunta: "24. ¿Qué se requiere para la realización de técnicas de alta complejidad?",
+      opciones: [
+          "A) Solo el consentimiento de la mujer.",
+          "B) Constancia escrita de estudios, tratamientos y resultados.",
+          "C) Aprobación de un comité ético."
+      ],
+      respuestaCorrecta: "B"
+  }
+];  
 
   const siguientePregunta = () => {
     if (preguntaActual < preguntasAvanzadas.length - 1) {

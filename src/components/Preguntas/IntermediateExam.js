@@ -9,222 +9,222 @@ const IntermediateExamen = ({ reiniciarExamen }) => {
 
   const preguntasIntermedias = [
     {
-      pregunta: "1. ¿Qué se hace si no se consiguen los objetivos del control metabólico a pesar de la dieta y el ejercicio?",
+      pregunta: "1. ¿Qué artículos del Código Penal no son aplicables si se cumplen los requisitos para el IVE?",
       opciones: [
-        "A) Se suspende todo tratamiento",
-        "B) Se inicia tratamiento con insulina",
-        "C) Se aumenta la dosis de medicación oral"
+          "A) Artículos 325 y 325 bis.",
+          "B) Artículos 300 y 301.",
+          "C) Artículos 200 y 201."
+      ],
+      respuestaCorrecta: "A"
+  },
+  {
+      pregunta: "2. ¿Qué tipo de población puede ampararse en la Ley 18.987?",
+      opciones: [
+          "A) Solo ciudadanas uruguayas.",
+          "B) Ciudadanas uruguayas y extranjeras con al menos un año de residencia.",
+          "C) Cualquier mujer, independientemente de su nacionalidad."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "2. ¿Cuál es el valor óptimo de glicemias capilares en estado basal?",
+  },
+  {
+      pregunta: "3. ¿Cuál de las siguientes afirmaciones es incorrecta sobre la Ley 18.987?",
       opciones: [
-        "A) 0.70 a 0.95 g/dl",
-        "B) 0.80 a 1.00 g/dl",
-        "C) 0.90 a 1.10 g/dl"
+          "A) Promueve el ejercicio pleno de los derechos sexuales y reproductivos.",
+          "B) Constituye un instrumento de control de los nacimientos.",
+          "C) Tutela la vida humana."
       ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "3. ¿Qué significa PTOG en el contexto de diabetes gestacional?",
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "4. ¿Qué tipos de mujeres pueden ampararse en esta ley?",
       opciones: [
-        "A) Prueba de Tolerancia Oral a la Glucosa",
-        "B) Prueba de Tolerancia Oral General",
-        "C) Prueba de Triglicéridos en la Sangre"
+          "A) Solo mujeres casadas.",
+          "B) Mujeres mayores de 18 años, adolescentes o incapaces habilitadas.",
+          "C) Solo mujeres mayores de 18 años."
       ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "4. ¿Qué especialista ajusta la dosis de insulina en el tratamiento de la diabetes gestacional?",
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "5. ¿Qué se debe hacer en la primera consulta para acceder al IVE?",
       opciones: [
-        "A) Cardiólogo",
-        "B) Nutricionista",
-        "C) Endocrinólogo"
+          "A) Presentar una solicitud escrita.",
+          "B) Poner en conocimiento del médico las circunstancias que han sobrevenido la concepción.",
+          "C) Firmar un contrato legal."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "6. ¿Qué condición adicional se requiere para trabajadoras no dependientes?",
+      opciones: [
+          "A) Estar jubiladas.",
+          "B) No tener más de un trabajador a cargo.",
+          "C) Tener un seguro de salud privado."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "7. ¿Qué sucede si el recién nacido presenta alguna enfermedad o afección?",
+      opciones: [
+          "A) No afecta el período de amparo.",
+          "B) El período de amparo puede extenderse hasta que el niño cumpla 6 meses.",
+          "C) Se requiere un preaviso al empleador."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "8. ¿Cuál es el período mínimo de descanso establecido por la ley?",
+      opciones: [
+          "A) 10 semanas.",
+          "B) 12 semanas.",
+          "C) 14 semanas."
       ],
       respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "5. ¿Qué tipo de defectos pueden prevenir los fármacos de la Clase A?",
+  },
+  {
+      pregunta: "9. ¿Qué sucede con las trabajadoras que quedaron embarazadas durante el seguro de paro?",
       opciones: [
-        "A) Morfológicos y neurológicos",
-        "B) Cardiovasculares",
-        "C) Respiratorios"
-      ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "6. ¿En qué casos se pueden utilizar fármacos de la Categoría D?",
-      opciones: [
-        "A) Cuando el clima es favorable",
-        "B) Cuando el beneficio potencial justifica el posible riesgo para el feto",
-        "C) En cualquier situación"
+          "A) Solo reciben la mitad del subsidio.",
+          "B) No son elegibles para el subsidio.",
+          "C) Son beneficiarias del subsidio por maternidad."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "7. ¿Qué fármaco de la Clase A es beneficioso para madres con hipotiroidismo?",
+  },
+  {
+      pregunta: "10. ¿Se requiere preaviso al empleador para extender el período de amparo?",
       opciones: [
-        "A) Hormona tiroidea",
-        "B) Insulina",
-        "C) Paracetamol"
-      ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "8. ¿Qué categorías de fármacos pueden ser administradas durante la gestación según la FDA?",
-      opciones: [
-        "A) A y B",
-        "B) B y C",
-        "C) C y D"
-      ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "9. ¿Qué se busca obtener antes de instaurar cualquier tratamiento durante el embarazo?",
-      opciones: [
-        "A) El consentimiento del padre",
-        "B) El beneficio terapéutico materno",
-        "C) La aprobación de un comité médico"
+          "A) Sí.",
+          "B) No.",
+          "C) Depende del caso."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "10. ¿Qué enfermedad del embarazo se caracteriza por daño endotelial?",
+  },
+  {
+      pregunta: "11. ¿Quién debe ser capacitado para la educación en el ejercicio de los derechos sexuales y reproductivos?",
       opciones: [
-        "A) Diabetes gestacional",
-        "B) Preeclampsia",
-        "C) Anemia"
+          "A) Solo los médicos.",
+          "B) Los docentes de ciclos primario, secundario y terciario.",
+          "C) Los padres de familia."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "11. ¿Cuándo se indica el Ácido acetil Salicílico (AAS) en caso de hipertensión crónica conocida?",
+  },
+  {
+      pregunta: "12. ¿Qué se busca prevenir según los objetivos específicos de las políticas y programas de Salud sexual y reproductiva?",
       opciones: [
-        "A) Desde las 12 semanas",
-        "B) Desde las 20 semanas",
-        "C) Desde las 30 semanas"
-      ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "12. ¿Qué fármaco se utiliza para tratar la hipertensión crónica y la hipertensión gestacional?",
-      opciones: [
-        "A) Alfametildopa",
-        "B) Paracetamol",
-        "C) Aspirina"
-      ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "13. ¿Qué otro suplemento además del Ácido acetil Salicílico se usa para prevenir la evolución a Preeclampsia?",
-      opciones: [
-        "A) Vitamina D",
-        "B) Calcio",
-        "C) Hierro"
-      ],
-      respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "14. ¿Qué tipo de enfermedad es la preeclampsia?",
-      opciones: [
-        "A) Cardiovascular",
-        "B) Endocrina",
-        "C) Multisistémica"
+          "A) Obesidad.",
+          "B) Enfermedades cardiovasculares.",
+          "C) Morbimortalidad materna."
       ],
       respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "15. ¿Qué es la Aloinmunización?",
+  },
+  {
+      pregunta: "13. ¿Qué se promueve en la atención integral a los casos de 'embarazo no deseado-no aceptado'?",
       opciones: [
-        "A) Producción de isoanticuerpos maternos",
-        "B) Falta de anticuerpos en el feto",
-        "C) Exceso de anticuerpos en la madre"
+          "A) La toma de medicamentos anticonceptivos.",
+          "B) Adopción.",
+          "C) Un abordaje sanitario comprometido con los derechos sexuales y reproductivos."
       ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "16. ¿Qué procedimientos invasivos se consideran eventos sensibilizantes?",
+      respuestaCorrecta: "C"
+  },
+  {
+      pregunta: "14. ¿Qué se busca garantizar en las prestaciones de salud sexual y reproductiva?",
       opciones: [
-        "A) Ultrasonido y radiografía",
-        "B) Amniocentesis y Cordocentesis",
-        "C) Vacunación y toma de muestras de sangre"
+          "A) Solo privacidad.",
+          "B) Calidad, confidencialidad y privacidad.",
+          "C) Solo calidad."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "17. ¿Qué antígeno causa la generación de anticuerpos irregulares en la madre?",
+  },
+  {
+      pregunta: "15. ¿Qué incluyen los derechos reproductivos según la Ley 18.426?",
       opciones: [
-        "A) Antígeno A",
-        "B) Antígeno B",
-        "C) Antígeno D"
-      ],
-      respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "18. ¿Qué se busca detectar con el Test de Coombs?",
-      opciones: [
-        "A) Presencia de Ac irregulares",
-        "B) Niveles de glucosa en sangre",
-        "C) Cantidad de plaquetas en la sangre"
-      ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "19. ¿Qué episodios pueden llevar a la Isoinmunización?",
-      opciones: [
-        "A) Transfusión de sangre y hemoderivados",
-        "B) Consumo de alcohol durante el embarazo",
-        "C) Exposición a productos químicos"
-      ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "20. ¿Qué patología podría requerir la inducción del trabajo de parto?",
-      opciones: [
-        "A) Preeclampsia",
-        "B) Diabetes gestacional",
-        "C) Anemia"
-      ],
-      respuestaCorrecta: "A"
-    },
-    {
-      pregunta: "21. ¿Qué impacto tienen las condiciones cervicales en la inducción del trabajo de parto?",
-      opciones: [
-        "A) No tienen impacto",
-        "B) Afectan la duración y probabilidad de éxito",
-        "C) Solo afectan la duración"
+          "A) Solo decidir tener o no hijos.",
+          "B) Decidir tener o no hijos y el acceso a métodos anticonceptivos.",
+          "C) Solo el acceso a métodos anticonceptivos."
       ],
       respuestaCorrecta: "B"
-    },
-    {
-      pregunta: "22. ¿Quién realiza el Test de Bishop?",
+  },
+  {
+      pregunta: "16. ¿Qué comprenden las técnicas de reproducción humana asistida según la ley?",
       opciones: [
-        "A) La madre",
-        "B) El enfermero",
-        "C) El Obstetra/Partera"
+          "A) Solo la fertilización in vitro.",
+          "B) Manipulación de gametos o embriones humanos.",
+          "C) Solo la inseminación artificial."
       ],
-      respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "23. ¿Qué es la Corioamnionitis?",
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "17. ¿Qué debe constar en la historia clínica para procedimientos de alta complejidad?",
       opciones: [
-        "A) Inflamación de las membranas amnióticas",
-        "B) Infección bacteriana",
-        "C) Ambas son correctas"
+          "A) Solo el consentimiento escrito.",
+          "B) Estudios, tratamientos y resultados justificativos.",
+          "C) Solo el diagnóstico médico."
       ],
-      respuestaCorrecta: "C"
-    },
-    {
-      pregunta: "24. ¿Qué sucede si hay una Rotura prematura de membranas (RPM)?",
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "18. ¿Qué se necesita para llevar a cabo las técnicas de reproducción humana asistida?",
       opciones: [
-        "A) Se inicia la inducción inmediatamente",
-        "B) Se espera al menos 48 horas antes de la inducción",
-        "C) No se requiere inducción"
+          "A) Solo el consentimiento escrito de la mujer.",
+          "B) Consentimiento escrito de ambos miembros de la pareja o de la mujer en su caso.",
+          "C) Ratificación verbal al momento de la inseminación."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "19. ¿Cuál es el rango de edad establecido para acceder a estas técnicas?",
+      opciones: [
+          "A) 18 a 60 años.",
+          "B) 21 a 55 años.",
+          "C) 18 a 50 años."
       ],
       respuestaCorrecta: "A"
-    }
-  ];  
+  },
+  {
+      pregunta: "20. ¿Qué garantiza el Estado según la ley?",
+      opciones: [
+          "A) Cobertura total de los costos.",
+          "B) Inclusión de estas técnicas en el Sistema Nacional Integrado de Salud.",
+          "C) Asignación de un médico especialista para cada caso."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "21. ¿Qué comprenden las técnicas de reproducción humana asistida según la ley?",
+      opciones: [
+          "A) Solo la fertilización in vitro.",
+          "B) Manipulación de gametos o embriones humanos.",
+          "C) Solo la inseminación artificial."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "22. ¿Qué se busca garantizar con la inclusión de estas técnicas en el Sistema Nacional Integrado de Salud?",
+      opciones: [
+          "A) Reducción de los costos.",
+          "B) Mayor disponibilidad de médicos especialistas.",
+          "C) Equidad en el acceso."
+      ],
+      respuestaCorrecta: "C"
+  },
+  {
+      pregunta: "23. ¿Qué debe constar en la historia clínica para procedimientos de alta complejidad?",
+      opciones: [
+          "A) Solo el diagnóstico médico.",
+          "B) Estudios, tratamientos y resultados justificativos.",
+          "C) Solo el consentimiento escrito."
+      ],
+      respuestaCorrecta: "B"
+  },
+  {
+      pregunta: "24. ¿Qué se necesita para llevar a cabo las técnicas de reproducción humana asistida?",
+      opciones: [
+          "A) Solo el consentimiento escrito de la mujer.",
+          "B) Consentimiento escrito de ambos miembros de la pareja o de la mujer en su caso.",
+          "C) Ratificación verbal al momento de la inseminación."
+      ],
+      respuestaCorrecta: "B"
+  }
+];  
 
   const siguientePregunta = () => {
     if (preguntaActual < preguntasIntermedias.length - 1) {

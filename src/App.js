@@ -25,7 +25,7 @@ function App() {
               {nivelExamen === 'BASICO' && <BasicExamen reiniciarExamen={reiniciarExamen} />}
               {nivelExamen === 'INTERMEDIO' && <IntermediateExamen reiniciarExamen={reiniciarExamen} />}
               {nivelExamen === 'AVANZADO' && <AdvancedExam reiniciarExamen={reiniciarExamen} />} {/* Agregado el examen Avanzado */}
-              <button onClick={reiniciarExamen} className="restart-button">Volver al inicio</button>
+              {/* <button onClick={reiniciarExamen} className="restart-button">Volver al inicio</button> */}
             </>
           ) : (
             <Routes>

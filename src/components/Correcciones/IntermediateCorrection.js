@@ -5,12 +5,21 @@ import './Correcciones.css';
 
 const calcularPuntaje = (preguntasIntermedias, opcionesSeleccionadas) => {
   let puntaje = 0;
+  let preguntasIncorrectas = [];
+  
   preguntasIntermedias.forEach((pregunta, index) => {
     if (opcionesSeleccionadas[index] && opcionesSeleccionadas[index][0] === pregunta.respuestaCorrecta) {
       puntaje += 0.5;
+    } else {
+      const respuestaCorrectaTexto = pregunta.opciones.find(opcion => opcion.startsWith(pregunta.respuestaCorrecta)).substring(3);
+      preguntasIncorrectas.push({
+        pregunta: pregunta.pregunta,
+        respuestaCorrecta: respuestaCorrectaTexto
+      });
     }
   });
-  return puntaje;
+
+  return { puntaje, preguntasIncorrectas };
 };
 
 const clasesPuntaje = {
@@ -21,7 +30,7 @@ const clasesPuntaje = {
 
 const IntermediateCorrection = ({ opcionesSeleccionadas, preguntasIntermedias, reiniciarExamen }) => {
   const navigate = useNavigate();
-  const puntaje = calcularPuntaje(preguntasIntermedias, opcionesSeleccionadas);
+  const { puntaje, preguntasIncorrectas } = calcularPuntaje(preguntasIntermedias, opcionesSeleccionadas);
   let mensaje = '';
   let classNamePuntaje = '';
 
@@ -49,13 +58,23 @@ const IntermediateCorrection = ({ opcionesSeleccionadas, preguntasIntermedias, r
     <div className="examen-container">
       <h1>Resultado del Examen Intermedio</h1>
       <p className={classNamePuntaje}>{mensaje}</p>
+      { preguntasIncorrectas.length > 0 &&
+        <div>
+          <h2>Preguntas incorrectas:</h2>
+          <ul>
+            {preguntasIncorrectas.map((item, index) => (
+              <li key={index}>{item.pregunta} (Respuesta correcta: {item.respuestaCorrecta})</li>
+            ))}
+          </ul>
+        </div>
+      }
       <button onClick={irAInicio}>Intentarlo nuevamente</button>
     </div>
   );
 };
 
 IntermediateCorrection.propTypes = {
-  opcionesSeleccionadas: PropTypes.object.isRequired, // Actualizado a 'object'
+  opcionesSeleccionadas: PropTypes.object.isRequired,
   preguntasIntermedias: PropTypes.array.isRequired,
   reiniciarExamen: PropTypes.func.isRequired
 };
