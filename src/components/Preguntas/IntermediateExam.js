@@ -9,221 +9,456 @@ const IntermediateExamen = ({ reiniciarExamen }) => {
 
   const preguntasIntermedias = [
     {
-      pregunta: "1. ¿Qué artículos del Código Penal no son aplicables si se cumplen los requisitos para el IVE?",
-      opciones: [
-          "A) Artículos 325 y 325 bis.",
-          "B) Artículos 300 y 301.",
-          "C) Artículos 200 y 201."
+      "pregunta": "1. ¿Cuál es el objetivo principal del control obstétrico?",
+      "opciones": [
+        "A) Obtener el máximo grado de salud física y mental de la madre e hijo.",
+        "B) Reducir al mínimo la morbi-mortalidad de la madre solamente.",
+        "C) Realizar un seguimiento del embarazo sin enfocarse en la salud materno-fetal."
       ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "2. ¿Qué tipo de población puede ampararse en la Ley 18.987?",
-      opciones: [
-          "A) Solo ciudadanas uruguayas.",
-          "B) Ciudadanas uruguayas y extranjeras con al menos un año de residencia.",
-          "C) Cualquier mujer, independientemente de su nacionalidad."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "2. ¿Cuál es la frecuencia aconsejada de controles prenatales para considerar un embarazo bien controlado en cantidad?",
+      "opciones": [
+        "A) Al menos tres consultas repartidas en los tres trimestres.",
+        "B) Al menos cinco consultas repartidas en los tres trimestres.",
+        "C) Al menos siete consultas repartidas en los tres trimestres."
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "3. ¿Cuál de las siguientes afirmaciones es incorrecta sobre la Ley 18.987?",
-      opciones: [
-          "A) Promueve el ejercicio pleno de los derechos sexuales y reproductivos.",
-          "B) Constituye un instrumento de control de los nacimientos.",
-          "C) Tutela la vida humana."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "3. ¿Qué examen se realiza para determinar la presencia de embrión intrautero y ajustar la edad gestacional en el primer trimestre?",
+      "opciones": [
+        "A) Ecografía obstétrica",
+        "B) Resonancia magnética",
+        "C) Radiografía abdominal"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "4. ¿Qué tipos de mujeres pueden ampararse en esta ley?",
-      opciones: [
-          "A) Solo mujeres casadas.",
-          "B) Mujeres mayores de 18 años, adolescentes o incapaces habilitadas.",
-          "C) Solo mujeres mayores de 18 años."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "4. ¿En qué semanas de gestación se recomienda realizar la Prueba de Tolerancia Oral a la Glucosa (PTOG)?",
+      "opciones": [
+        "A) Entre las 20 y 24 semanas",
+        "B) Entre las 24 y 28 semanas",
+        "C) Entre las 28 y 32 semanas"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "5. ¿Qué se debe hacer en la primera consulta para acceder al IVE?",
-      opciones: [
-          "A) Presentar una solicitud escrita.",
-          "B) Poner en conocimiento del médico las circunstancias que han sobrevenido la concepción.",
-          "C) Firmar un contrato legal."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "5. ¿Cuál es el objetivo de la semiología obstétrica a partir de las 36 semanas?",
+      "opciones": [
+        "A) Estimar el peso fetal",
+        "B) Valorar la cantidad de líquido amniótico",
+        "C) Ambas respuestas son correctas"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "6. ¿Qué condición adicional se requiere para trabajadoras no dependientes?",
-      opciones: [
-          "A) Estar jubiladas.",
-          "B) No tener más de un trabajador a cargo.",
-          "C) Tener un seguro de salud privado."
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "6. ¿Cuál es el rango normal de presión arterial en una gestante?",
+      "opciones": [
+        "A) Menor a 120/80 mmHg",
+        "B) Menor a 140/90 mmHg",
+        "C) Menor a 160/100 mmHg"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "7. ¿Qué sucede si el recién nacido presenta alguna enfermedad o afección?",
-      opciones: [
-          "A) No afecta el período de amparo.",
-          "B) El período de amparo puede extenderse hasta que el niño cumpla 6 meses.",
-          "C) Se requiere un preaviso al empleador."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "7. ¿Cuál es el fármaco de elección para el tratamiento de la hipertensión gestacional?",
+      "opciones": [
+        "A) Labetalol",
+        "B) Alfametildopa",
+        "C) Nifedipina"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "8. ¿Cuál es el período mínimo de descanso establecido por la ley?",
-      opciones: [
-          "A) 10 semanas.",
-          "B) 12 semanas.",
-          "C) 14 semanas."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "8. ¿Qué fármaco se utiliza para la profilaxis de convulsiones en preeclampsia severa?",
+      "opciones": [
+        "A) Sulfato de magnesio",
+        "B) Diazepam",
+        "C) Fenitoína"
       ],
-      respuestaCorrecta: "C"
-  },
-  {
-      pregunta: "9. ¿Qué sucede con las trabajadoras que quedaron embarazadas durante el seguro de paro?",
-      opciones: [
-          "A) Solo reciben la mitad del subsidio.",
-          "B) No son elegibles para el subsidio.",
-          "C) Son beneficiarias del subsidio por maternidad."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "9. ¿Cuál es el gold standard para el diagnóstico de proteinuria significativa en preeclampsia?",
+      "opciones": [
+        "A) Índice proteinuria/creatininuria",
+        "B) Tira reactiva en orina",
+        "C) Albuminuria en 24 horas"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "10. ¿Se requiere preaviso al empleador para extender el período de amparo?",
-      opciones: [
-          "A) Sí.",
-          "B) No.",
-          "C) Depende del caso."
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "10. ¿Cuál es el rango de edad gestacional en el que se recomienda la inducción a la maduración pulmonar fetal con corticoides?",
+      "opciones": [
+        "A) 24 a 34 semanas",
+        "B) 28 a 36 semanas",
+        "C) 32 a 38 semanas"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "11. ¿Quién debe ser capacitado para la educación en el ejercicio de los derechos sexuales y reproductivos?",
-      opciones: [
-          "A) Solo los médicos.",
-          "B) Los docentes de ciclos primario, secundario y terciario.",
-          "C) Los padres de familia."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "11. ¿Cuál es el principal agente etiológico de las infecciones del tracto urinario durante el embarazo?",
+      "opciones": [
+        "A) Escherichia coli",
+        "B) Staphylococcus aureus",
+        "C) Streptococcus agalactiae"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "12. ¿Qué se busca prevenir según los objetivos específicos de las políticas y programas de Salud sexual y reproductiva?",
-      opciones: [
-          "A) Obesidad.",
-          "B) Enfermedades cardiovasculares.",
-          "C) Morbimortalidad materna."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "12. ¿Cuál es el antibiótico de primera elección para el tratamiento de la bacteriuria asintomática en el embarazo?",
+      "opciones": [
+        "A) Amoxicilina",
+        "B) Cefuroxima",
+        "C) Ciprofloxacino"
       ],
-      respuestaCorrecta: "C"
-  },
-  {
-      pregunta: "13. ¿Qué se promueve en la atención integral a los casos de 'embarazo no deseado-no aceptado'?",
-      opciones: [
-          "A) La toma de medicamentos anticonceptivos.",
-          "B) Adopción.",
-          "C) Un abordaje sanitario comprometido con los derechos sexuales y reproductivos."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "13. ¿Cuál es el principal riesgo de la pielonefritis aguda durante el embarazo?",
+      "opciones": [
+        "A) Amenaza de parto pretérmino",
+        "B) Preeclampsia",
+        "C) Rotura prematura de membranas"
       ],
-      respuestaCorrecta: "C"
-  },
-  {
-      pregunta: "14. ¿Qué se busca garantizar en las prestaciones de salud sexual y reproductiva?",
-      opciones: [
-          "A) Solo privacidad.",
-          "B) Calidad, confidencialidad y privacidad.",
-          "C) Solo calidad."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "14. ¿Cuál es el método de elección para la uteroinhibición en la amenaza de parto pretérmino en embarazos mayores o iguales a 32 semanas?",
+      "opciones": [
+        "A) Indometacina",
+        "B) Nifedipina",
+        "C) Fenoterol"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "15. ¿Qué incluyen los derechos reproductivos según la Ley 18.426?",
-      opciones: [
-          "A) Solo decidir tener o no hijos.",
-          "B) Decidir tener o no hijos y el acceso a métodos anticonceptivos.",
-          "C) Solo el acceso a métodos anticonceptivos."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "15. ¿Cuál es la puntuación del test de Bishop que se considera favorable para la inducción del trabajo de parto?",
+      "opciones": [
+        "A) Mayor a 4 puntos",
+        "B) Mayor a 6 puntos",
+        "C) Mayor a 8 puntos"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "16. ¿Qué comprenden las técnicas de reproducción humana asistida según la ley?",
-      opciones: [
-          "A) Solo la fertilización in vitro.",
-          "B) Manipulación de gametos o embriones humanos.",
-          "C) Solo la inseminación artificial."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "16. ¿Cuál es el método de elección para la maduración cervical en pacientes con índice de Bishop menor a 6 y membranas íntegras?",
+      "opciones": [
+        "A) Prostaglandinas vaginales",
+        "B) Sonda de Foley transcervical",
+        "C) Oxitocina intravenosa"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "17. ¿Qué debe constar en la historia clínica para procedimientos de alta complejidad?",
-      opciones: [
-          "A) Solo el consentimiento escrito.",
-          "B) Estudios, tratamientos y resultados justificativos.",
-          "C) Solo el diagnóstico médico."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "17. ¿Cuál es la dosis inicial recomendada de oxitocina para la inducción del trabajo de parto?",
+      "opciones": [
+        "A) 2 mU/min",
+        "B) 6 mU/min",
+        "C) 12 mU/min"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "18. ¿Qué se necesita para llevar a cabo las técnicas de reproducción humana asistida?",
-      opciones: [
-          "A) Solo el consentimiento escrito de la mujer.",
-          "B) Consentimiento escrito de ambos miembros de la pareja o de la mujer en su caso.",
-          "C) Ratificación verbal al momento de la inseminación."
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "18. ¿Cuál es el rango normal de frecuencia cardíaca fetal durante el trabajo de parto?",
+      "opciones": [
+        "A) 100-120 latidos por minuto",
+        "B) 110-160 latidos por minuto",
+        "C) 120-180 latidos por minuto"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "19. ¿Cuál es el rango de edad establecido para acceder a estas técnicas?",
-      opciones: [
-          "A) 18 a 60 años.",
-          "B) 21 a 55 años.",
-          "C) 18 a 50 años."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "19. ¿Cuál es el valor normal de hemoglobina en un recién nacido a término sano?",
+      "opciones": [
+        "A) 10-14 g/dL",
+        "B) 14-20 g/dL",
+        "C) 20-24 g/dL"
       ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "20. ¿Qué garantiza el Estado según la ley?",
-      opciones: [
-          "A) Cobertura total de los costos.",
-          "B) Inclusión de estas técnicas en el Sistema Nacional Integrado de Salud.",
-          "C) Asignación de un médico especialista para cada caso."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "20. ¿Cuál es el rango normal de frecuencia respiratoria en un recién nacido?",
+      "opciones": [
+        "A) 20-40 respiraciones por minuto",
+        "B) 40-60 respiraciones por minuto",
+        "C) 60-80 respiraciones por minuto"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "21. ¿Qué comprenden las técnicas de reproducción humana asistida según la ley?",
-      opciones: [
-          "A) Solo la fertilización in vitro.",
-          "B) Manipulación de gametos o embriones humanos.",
-          "C) Solo la inseminación artificial."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "21. ¿Qué reflejo arcaico evalúa la respuesta del recién nacido al simular una caída?",
+      "opciones": [
+        "A) Reflejo de Moro",
+        "B) Reflejo de succión",
+        "C) Reflejo de búsqueda"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "22. ¿Qué se busca garantizar con la inclusión de estas técnicas en el Sistema Nacional Integrado de Salud?",
-      opciones: [
-          "A) Reducción de los costos.",
-          "B) Mayor disponibilidad de médicos especialistas.",
-          "C) Equidad en el acceso."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "22. ¿Cuál es el tiempo máximo esperado para la expulsión del meconio en un recién nacido sano?",
+      "opciones": [
+        "A) 12 horas",
+        "B) 24 horas",
+        "C) 48 horas"
       ],
-      respuestaCorrecta: "C"
-  },
-  {
-      pregunta: "23. ¿Qué debe constar en la historia clínica para procedimientos de alta complejidad?",
-      opciones: [
-          "A) Solo el diagnóstico médico.",
-          "B) Estudios, tratamientos y resultados justificativos.",
-          "C) Solo el consentimiento escrito."
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "23. ¿Cuál es el método recomendado para la curación del cordón umbilical en el recién nacido?",
+      "opciones": [
+        "A) Limpieza con agua y jabón",
+        "B) Aplicación de antibióticos tópicos",
+        "C) Higiene con alcohol al 70% en forma circular"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "24. ¿Qué se necesita para llevar a cabo las técnicas de reproducción humana asistida?",
-      opciones: [
-          "A) Solo el consentimiento escrito de la mujer.",
-          "B) Consentimiento escrito de ambos miembros de la pareja o de la mujer en su caso.",
-          "C) Ratificación verbal al momento de la inseminación."
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "24. ¿Cuál es la causa más frecuente de metrorragia en el tercer trimestre del embarazo?",
+      "opciones": [
+        "A) Placenta previa",
+        "B) Desprendimiento prematuro de placenta normoinserta",
+        "C) Rotura uterina"
       ],
-      respuestaCorrecta: "B"
-  }
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "25. ¿Cuál es el tipo de placenta previa que cubre totalmente el orificio cervical interno?",
+      "opciones": [
+        "A) Placenta previa tipo I",
+        "B) Placenta previa tipo II",
+        "C) Placenta previa tipo IV"
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "26. ¿Cuál es el método diagnóstico de elección para confirmar una placenta previa?",
+      "opciones": [
+        "A) Ecografía obstétrica",
+        "B) Resonancia magnética",
+        "C) Tacto vaginal"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "27. ¿Cuál es la edad gestacional recomendada para finalizar el embarazo en una paciente con placenta previa asintomática?",
+      "opciones": [
+        "A) 34 semanas",
+        "B) 36 semanas",
+        "C) 38 semanas"
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "28. ¿Cuál es el periodo del puerperio que comprende las primeras 24 horas después del parto?",
+      "opciones": [
+        "A) Puerperio inmediato",
+        "B) Puerperio mediato",
+        "C) Puerperio tardío"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "29. ¿Cuál es el aspecto normal de los loquios en las primeras 48 horas después del parto?",
+      "opciones": [
+        "A) Serosos",
+        "B) Rojizos y abundantes",
+        "C) Amarillentos"
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "30. ¿Cuál es el método anticonceptivo recomendado durante la lactancia materna?",
+      "opciones": [
+        "A) Anticonceptivos orales combinados",
+        "B) Dispositivo intrauterino",
+        "C) Métodos de barrera"
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "31. ¿Cuál es el principal beneficio del alojamiento conjunto para el recién nacido?",
+      "opciones": [
+        "A) Fortalece los lazos afectivos entre madre e hijo",
+        "B) Disminuye el riesgo de infecciones nosocomiales",
+        "C) Ambas respuestas son correctas"
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "32. ¿Cuál es el rango normal de peso para un recién nacido a término?",
+      "opciones": [
+        "A) 2000-2500 gramos",
+        "B) 2500-4000 gramos",
+        "C) 4000-4500 gramos"
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "33. ¿Qué reflejo arcaico evalúa la respuesta del recién nacido ante un estímulo táctil en la palma de la mano?",
+      "opciones": [
+        "A) Reflejo de prensión palmar",
+        "B) Reflejo de Babinski",
+        "C) Reflejo de Galant"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "34. ¿Cuál es el agente etiológico más frecuente de la mastitis puerperal?",
+      "opciones": [
+        "A) Staphylococcus aureus",
+        "B) Escherichia coli",
+        "C) Streptococcus agalactiae"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "35. ¿Cuál es el tratamiento inicial recomendado para la mastitis puerperal?",
+      "opciones": [
+        "A) Suspensión de la lactancia materna",
+        "B) Antibióticos de amplio espectro",
+        "C) Vaciamiento adecuado del pecho y medidas locales"
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "36. ¿Cuál es la definición de aborto según la OMS?",
+      "opciones": [
+        "A) Interrupción del embarazo antes de las 20 semanas o con un peso fetal menor a 500 gramos",
+        "B) Interrupción del embarazo antes de las 24 semanas o con un peso fetal menor a 600 gramos",
+        "C) Interrupción del embarazo antes de las 28 semanas o con un peso fetal menor a 1000 gramos"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "37. ¿Cuál es el signo clínico fundamental del aborto?",
+      "opciones": [
+        "A) Dolor abdominal",
+        "B) Fiebre",
+        "C) Metrorragia"
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "38. ¿Qué tipo de aborto se caracteriza por la expulsión parcial de los productos de la concepción?",
+      "opciones": [
+        "A) Aborto completo",
+        "B) Aborto incompleto",
+        "C) Aborto retenido"
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "39. ¿Cuál es la principal complicación del aborto incompleto?",
+      "opciones": [
+        "A) Infección",
+        "B) Hemorragia",
+        "C) Perforación uterina"
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "40. ¿Cuál es la indicación más frecuente de cesárea?",
+      "opciones": [
+        "A) Desproporción cefalopélvica",
+        "B) Presentación podálica",
+        "C) Placenta previa"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "41. ¿Cuál es el tipo de anestesia de elección para una cesárea electiva?",
+      "opciones": [
+        "A) Anestesia general",
+        "B) Anestesia epidural",
+        "C) Anestesia raquídea"
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "42. ¿Cuál es la complicación más frecuente de la cesárea en el postoperatorio inmediato?",
+      "opciones": [
+        "A) Hemorragia",
+        "B) Infección de la herida quirúrgica",
+        "C) Tromboembolismo pulmonar"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "43. ¿Cuál es el período de tiempo recomendado para el inicio de la deambulación después de una cesárea sin complicaciones?",
+      "opciones": [
+        "A) 6 horas",
+        "B) 12 horas",
+        "C) 24 horas"
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "pregunta": "44. ¿Cuál es la definición de rotura prematura de membranas (RPM)?",
+      "opciones": [
+        "A) Rotura de las membranas ovulares antes del inicio del trabajo de parto, independientemente de la edad gestacional",
+        "B) Rotura de las membranas ovulares después del inicio del trabajo de parto, independientemente de la edad gestacional",
+        "C) Rotura de las membranas ovulares antes de las 37 semanas de gestación"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "45. ¿Cuál es el método diagnóstico de elección para confirmar una RPM?",
+      "opciones": [
+        "A) Especuloscopía",
+        "B) Ecografía obstétrica",
+        "C) Prueba de cristalización"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "46. ¿Cuál es el antibiótico de elección para la profilaxis de la infección en casos de RPM pretérmino?",
+      "opciones": [
+        "A) Ampicilina",
+        "B) Eritromicina",
+        "C) Clindamicina"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "47. ¿Cuál es la complicación más grave de la RPM para el feto?",
+      "opciones": [
+        "A) Prematuridad",
+        "B) Infección intraamniótica",
+        "C) Hipoplasia pulmonar"
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "pregunta": "48. ¿Cuál es la vía de transmisión más frecuente de la toxoplasmosis congénita?",
+      "opciones": [
+        "A) Transplacentaria",
+        "B) Perinatal",
+        "C) Postnatal"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "49. ¿Cuál es el método diagnóstico de elección para detectar la infección materna por toxoplasma durante el embarazo?",
+      "opciones": [
+        "A) Serología IgG e IgM",
+        "B) Reacción en cadena de la polimerasa (PCR) en líquido amniótico",
+        "C) Aislamiento del parásito en placenta"
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "50. ¿Cuál es el fármaco de elección para el tratamiento de la toxoplasmosis durante el embarazo?",
+      "opciones": [
+        "A) Espiramicina",
+        "B) Pirimetamina",
+        "C) Sulfadiazina"
+      ],
+      "respuestaCorrecta": "A"
+    }
+    
 ];  
 
   const siguientePregunta = () => {

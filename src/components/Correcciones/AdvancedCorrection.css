@@ -1,0 +1,73 @@
+.examen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #555;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.puntaje-alto {
+  color: #4caf50;
+  font-weight: bold;
+  background-color: #dfffd9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.puntaje-medio {
+  color: #ffa500;
+  font-weight: bold;
+  background-color: #fff5da;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.puntaje-bajo {
+  color: #ff0000;
+  font-weight: bold;
+  background-color: #ffdada;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  color: red;
+  margin: 5px 0;
+}

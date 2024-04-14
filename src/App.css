@@ -1,10 +1,11 @@
 .App {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #58c5d6;
+  padding: 2rem;
 }
 
 .App-header {
@@ -39,10 +40,15 @@ h1, h2 {
   margin: 4px 2px;
   cursor: pointer;
   margin-bottom: 1em;
-  /* Propiedades de sombreado */
   box-shadow: 0px 4px 6px rgba(7, 83, 115, 1);
 }
 
 .exam-level-button:hover {
   background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
 }

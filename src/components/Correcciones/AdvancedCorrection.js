@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-import './Correcciones.css';
+import './AdvancedCorrection.css';
 
 const calcularPuntaje = (preguntasAvanzadas, opcionesSeleccionadas) => {
   let puntaje = 0;
   let preguntasIncorrectas = [];
-  
+
   preguntasAvanzadas.forEach((pregunta, index) => {
     if (opcionesSeleccionadas[index] && opcionesSeleccionadas[index][0] === pregunta.respuestaCorrecta) {
-      puntaje += 0.5;
+      puntaje += 1;
     } else {
       const respuestaCorrectaTexto = pregunta.opciones.find(opcion => opcion.startsWith(pregunta.respuestaCorrecta)).substring(3);
       preguntasIncorrectas.push({
@@ -34,14 +34,14 @@ const AdvancedCorrection = ({ opcionesSeleccionadas, preguntasAvanzadas, reinici
   let mensaje = '';
   let classNamePuntaje = '';
 
-  if (puntaje >= 9 && puntaje <= 12) {
-    mensaje = `Excelente, has aprobado con ${puntaje}. ¡Eres genial!`;
+  if (puntaje >= 8) {
+    mensaje = `Excelente, has aprobado con ${puntaje} puntos. ¡Eres genial!`;
     classNamePuntaje = clasesPuntaje.alto;
-  } else if (puntaje >= 6 && puntaje < 9) {
-    mensaje = `Muy bien, has aprobado con ${puntaje}, pero deberías reforzar algunos conceptos.`;
+  } else if (puntaje >= 5) {
+    mensaje = `Bien hecho, has aprobado con ${puntaje} puntos, pero deberías reforzar algunos conceptos.`;
     classNamePuntaje = clasesPuntaje.medio;
   } else {
-    mensaje = `Lo siento, no has aprobado. Tu nota fue ${puntaje}. Debes mejorar más e intentarlo nuevamente.`;
+    mensaje = `Lo siento, no has aprobado. Tu puntaje fue ${puntaje}. Debes estudiar más e intentarlo nuevamente.`;
     classNamePuntaje = clasesPuntaje.bajo;
   }
 
@@ -58,16 +58,18 @@ const AdvancedCorrection = ({ opcionesSeleccionadas, preguntasAvanzadas, reinici
     <div className="examen-container">
       <h1>Resultado del Examen Avanzado</h1>
       <p className={classNamePuntaje}>{mensaje}</p>
-      { preguntasIncorrectas.length > 0 &&
+      {preguntasIncorrectas.length > 0 && (
         <div>
           <h2>Preguntas incorrectas:</h2>
           <ul>
             {preguntasIncorrectas.map((item, index) => (
-              <li key={index}>{item.pregunta} (Respuesta correcta: {item.respuestaCorrecta})</li>
+              <li key={index}>
+                {item.pregunta} (Respuesta correcta: {item.respuestaCorrecta})
+              </li>
             ))}
           </ul>
         </div>
-      }
+      )}
       <button onClick={irAInicio}>Intentarlo nuevamente</button>
     </div>
   );

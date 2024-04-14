@@ -1,0 +1,141 @@
+.examen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.caso-clinico {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.caso-clinico p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: #555;
+}
+
+.caso-clinico h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.caso-clinico ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.caso-clinico li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.pregunta-container {
+  margin-bottom: 2rem;
+}
+
+.pregunta-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.pregunta-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.opcion-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.opcion-seleccionada {
+  background-color: #5ef94f;
+}
+
+.opcion-text {
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+  color: #333333;
+}
+
+.nav-button,
+.enviar-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-right: 1rem;
+}
+
+.nav-button:hover,
+.enviar-button:hover {
+  background-color: #0056b3;
+}
+
+.nav-button:disabled,
+.enviar-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .examen-container {
+    padding: 1rem;
+  }
+
+  .caso-clinico {
+    padding: 1.5rem;
+  }
+
+  .pregunta-title {
+    font-size: 1.3rem;
+  }
+
+  .pregunta-text {
+    font-size: 1.1rem;
+  }
+
+  .opcion-text {
+    font-size: 1rem;
+  }
+
+  .nav-button,
+  .enviar-button {
+    font-size: 0.9rem;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}

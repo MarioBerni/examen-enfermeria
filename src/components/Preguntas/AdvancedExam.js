@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Preguntas.css';
 import AdvancedCorrection from '../Correcciones/AdvancedCorrection';
+import './AdvancedExam.css';
 
 const AdvancedExam = ({ reiniciarExamen }) => {
   const [preguntaActual, setPreguntaActual] = useState(0);
@@ -9,222 +9,96 @@ const AdvancedExam = ({ reiniciarExamen }) => {
 
   const preguntasAvanzadas = [
     {
-      pregunta: "1. ¿Cuál es el objetivo principal de la Ley 18.987?",
-      opciones: [
-          "A) Penalizar la interrupción del embarazo.",
-          "B) Despenalizar la interrupción del embarazo bajo ciertas condiciones.",
-          "C) Promover la planificación familiar."
+      "pregunta": "1. ¿Cuál es el diagnóstico más probable en esta paciente basándose en los hallazgos clínicos y de laboratorio?",
+      "opciones": [
+        "A) Amenaza de parto pretérmino y preeclampsia sobreagregada",
+        "B) Trabajo de parto pretérmino y anemia moderada",
+        "C) Amenaza de aborto y diabetes gestacional"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "2. ¿Qué establece el Art. 325 y 325 bis del Código del Proceso Penal?",
-      opciones: [
-          "A) Establece una pena de seis a veinticuatro meses de prisión para quien colabore en el aborto con consentimiento de la mujer.",
-          "B) Penaliza el aborto sin consentimiento de la mujer.",
-          "C) Establece una pena de prisión de dos a cinco años para quien realice un aborto."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "2. ¿Qué factores de riesgo presenta la paciente para el desarrollo de complicaciones obstétricas?",
+      "opciones": [
+        "A) Hipertensión arterial crónica y antecedente de infección urinaria",
+        "B) Edad materna avanzada y obesidad",
+        "C) Diabetes gestacional y trombofilia"
       ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "3. ¿Qué no constituye la interrupción voluntaria del embarazo según la ley?",
-      opciones: [
-          "A) Un derecho humano.",
-          "B) Un instrumento de control de los nacimientos.",
-          "C) Un acto médico."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "3. ¿Cómo interpretaría los resultados de laboratorio de esta paciente?",
+      "opciones": [
+        "A) Anemia leve y leucocitosis con neutrofilia sugestiva de infección",
+        "B) Trombocitopenia y coagulopatía",
+        "C) Hiperglucemia y disfunción hepática"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "4. ¿Qué debe acreditar una extranjera para acceder al IVE?",
-      opciones: [
-          "A) Residencia habitual en el territorio durante un período no inferior a un año.",
-          "B) Ciudadanía uruguaya.",
-          "C) Seguro médico internacional."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "4. Considerando la edad gestacional y los hallazgos clínicos, ¿qué diagnóstico diferencial plantearía en este caso?",
+      "opciones": [
+        "A) Desprendimiento prematuro de placenta normoinserta",
+        "B) Rotura prematura de membranas",
+        "C) Corioamnionitis"
       ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "5. ¿Qué se evalúa en la primera consulta médica para el IVE?",
-      opciones: [
-          "A) La capacidad económica de la mujer.",
-          "B) Las circunstancias que han sobrevenido la concepción.",
-          "C) El estado civil de la mujer."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "5. ¿Qué medidas terapéuticas iniciales recomendaría para el manejo de esta paciente?",
+      "opciones": [
+        "A) Reposo absoluto, hidratación intravenosa y antibioticoterapia de amplio espectro",
+        "B) Inductores de maduración pulmonar fetal y tocólisis intravenosa",
+        "C) Sulfato de magnesio intravenoso y antihipertensivos orales"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "6. ¿Qué institución está encargada de amparar actividades para el subsidio por maternidad?",
-      opciones: [
-          "A) Ministerio de Salud Pública.",
-          "B) Banco de Previsión Social.",
-          "C) Instituto del Niño y Adolescente del Uruguay."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "6. ¿Qué estudios adicionales solicitaría para confirmar el diagnóstico y evaluar el bienestar fetal?",
+      "opciones": [
+        "A) Cardiotocografía fetal y perfil biofísico fetal",
+        "B) Resonancia magnética fetal y ecocardiografía fetal",
+        "C) Amniocentesis y cordocentesis"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "7. ¿Qué pasa si el recién nacido necesita tratamiento domiciliario por alguna afección?",
-      opciones: [
-          "A) No afecta el período de amparo.",
-          "B) El período de amparo puede extenderse hasta que el niño cumpla 6 meses.",
-          "C) Se corta el subsidio."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "7. Basándose en los antecedentes obstétricos de la paciente, ¿qué medidas profilácticas se deberían haber considerado durante este embarazo?",
+      "opciones": [
+        "A) Administración de ácido acetilsalicílico a dosis bajas y suplementación con calcio",
+        "B) Progesterona vaginal y pesquisa regular de estreptococo grupo B",
+        "C) Aspirina a dosis bajas y tamizaje para diabetes gestacional"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "8. ¿Qué tipo de trabajadoras tienen derecho al subsidio por maternidad?",
-      opciones: [
-          "A) Solo trabajadoras dependientes.",
-          "B) Trabajadoras dependientes, no dependientes, y titulares de empresas monotributistas.",
-          "C) Solo trabajadoras en el sector público."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "8. Si la paciente presenta un deterioro clínico y/o fetal, ¿qué conducta obstétrica propondría y por qué?",
+      "opciones": [
+        "A) Finalización inmediata del embarazo por cesárea debido al riesgo de compromiso fetal",
+        "B) Conducta expectante con monitorización fetal continua y maduración pulmonar fetal",
+        "C) Inducción del trabajo de parto con oxitocina intravenosa"
       ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "9. ¿Cuál es el mínimo de semanas de descanso que establece la Ley 19161?",
-      opciones: [
-          "A) 14 semanas.",
-          "B) 16 semanas.",
-          "C) 18 semanas."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "9. En caso de requerir la finalización del embarazo, ¿qué vía de parto sería la más adecuada en este caso?",
+      "opciones": [
+        "A) Parto vaginal inducido con oxitocina",
+        "B) Cesárea electiva por el riesgo de complicaciones maternas y fetales",
+        "C) Parto instrumentado con fórceps o vacuum"
       ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "10. ¿Se pueden variar los períodos de licencia con autorización del BPS?",
-      opciones: [
-          "A) Sí.",
-          "B) No.",
-          "C) Solo en casos excepcionales."
+      "respuestaCorrecta": "A"
+    },
+    {
+      "pregunta": "10. Suponiendo que la paciente tiene una evolución favorable y se logra prolongar el embarazo, ¿qué medidas de seguimiento y control recomendaría para prevenir complicaciones maternas y fetales?",
+      "opciones": [
+        "A) Control prenatal semanal, perfil biofísico fetal bisemanal y inductores de maduración pulmonar fetal",
+        "B) Hospitalización continua, monitorización fetal diaria y finalización electiva a las 34 semanas",
+        "C) Control prenatal quincenal, ecografía doppler mensual y finalización electiva a las 37 semanas"
       ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "11. ¿Qué tipo de infraestructura se busca fortalecer en el nivel primario de atención según la Ley 18.426?",
-      opciones: [
-          "A) Solo infraestructura física.",
-          "B) Infraestructura y capacidad de los recursos humanos y materiales.",
-          "C) Solo recursos materiales."
-      ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "12. ¿Qué se busca impulsar en la población según los objetivos generales de las políticas y programas de Salud sexual y reproductiva?",
-      opciones: [
-          "A) Medidas de promoción de la salud y prevención de la enfermedad.",
-          "B) Solo medidas de promoción de la salud.",
-          "C) Solo medidas de prevención de la enfermedad."
-      ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "13. ¿Qué se busca garantizar para las personas institucionalizadas o en tratamiento asistencial?",
-      opciones: [
-          "A) Solo acceso a medicación.",
-          "B) Respeto a los derechos sexuales y reproductivos.",
-          "C) Solo privacidad y confidencialidad."
-      ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "14. ¿Qué se promueve para el intercambio de información y educación para la salud según la Ley 18.426?",
-      opciones: [
-          "A) Coordinación interinstitucional y participación de redes sociales.",
-          "B) Solo coordinación interinstitucional.",
-          "C) Solo participación de redes sociales."
-      ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "15. ¿Qué comprenden los derechos sexuales según la Ley 18.426?",
-      opciones: [
-          "A) Solo poder decidir cuándo y cómo tener relaciones sexuales.",
-          "B) Poder decidir cuándo, cómo y con quién tener relaciones sexuales, y vivir la sexualidad sin presiones ni violencia.",
-          "C) Solo vivir la sexualidad sin presiones ni violencia."
-      ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "16. ¿Cuál es el principal objetivo terapéutico de las técnicas de reproducción humana asistida según la ley?",
-      opciones: [
-          "A) Aumentar la tasa de natalidad.",
-          "B) Tratar la infertilidad.",
-          "C) Ofrecer una alternativa a la adopción."
-      ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "17. ¿Qué se necesita para que una institución pueda aplicar estas técnicas?",
-      opciones: [
-          "A) Solo una licencia comercial.",
-          "B) Habilitación específica del Ministerio de Salud Pública.",
-          "C) Acreditación internacional."
-      ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "18. ¿Qué se considera para definir la infertilidad según la ley?",
-      opciones: [
-          "A) Tiempo de intento de concepción.",
-          "B) Edad de la mujer.",
-          "C) Número de intentos fallidos de inseminación."
-      ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "19. ¿Qué se requiere para la realización de técnicas de alta complejidad?",
-      opciones: [
-          "A) Solo el consentimiento de la mujer.",
-          "B) Constancia escrita de estudios, tratamientos y resultados.",
-          "C) Aprobación de un comité ético."
-      ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "20. ¿Qué se busca garantizar con la inclusión de estas técnicas en el Sistema Nacional Integrado de Salud?",
-      opciones: [
-          "A) Equidad en el acceso.",
-          "B) Reducción de los costos.",
-          "C) Mayor disponibilidad de médicos especialistas."
-      ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "21. ¿Cuál es el principal objetivo terapéutico de las técnicas de reproducción humana asistida según la ley?",
-      opciones: [
-          "A) Aumentar la tasa de natalidad.",
-          "B) Tratar la infertilidad.",
-          "C) Ofrecer una alternativa a la adopción."
-      ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "22. ¿Qué se necesita para que una institución pueda aplicar estas técnicas?",
-      opciones: [
-          "A) Solo una licencia comercial.",
-          "B) Habilitación específica del Ministerio de Salud Pública.",
-          "C) Acreditación internacional."
-      ],
-      respuestaCorrecta: "B"
-  },
-  {
-      pregunta: "23. ¿Qué se considera para definir la infertilidad según la ley?",
-      opciones: [
-          "A) Tiempo de intento de concepción.",
-          "B) Edad de la mujer.",
-          "C) Número de intentos fallidos de inseminación."
-      ],
-      respuestaCorrecta: "A"
-  },
-  {
-      pregunta: "24. ¿Qué se requiere para la realización de técnicas de alta complejidad?",
-      opciones: [
-          "A) Solo el consentimiento de la mujer.",
-          "B) Constancia escrita de estudios, tratamientos y resultados.",
-          "C) Aprobación de un comité ético."
-      ],
-      respuestaCorrecta: "B"
-  }
-];  
+      "respuestaCorrecta": "A"
+    }
+  ];
 
   const siguientePregunta = () => {
     if (preguntaActual < preguntasAvanzadas.length - 1) {
@@ -239,18 +113,50 @@ const AdvancedExam = ({ reiniciarExamen }) => {
   };
 
   const seleccionarOpcion = (preguntaIndex, opcion) => {
-    setOpcionesSeleccionadas({
-      ...opcionesSeleccionadas,
-      [preguntaIndex]: opcion
-    });
+    setOpcionesSeleccionadas({ ...opcionesSeleccionadas, [preguntaIndex]: opcion });
   };
 
   return (
     <div className="examen-container">
       {enviarExamen ? (
-        <AdvancedCorrection opcionesSeleccionadas={opcionesSeleccionadas} preguntasAvanzadas={preguntasAvanzadas} reiniciarExamen={reiniciarExamen} />
+        <AdvancedCorrection
+          opcionesSeleccionadas={opcionesSeleccionadas}
+          preguntasAvanzadas={preguntasAvanzadas}
+          reiniciarExamen={reiniciarExamen}
+        />
       ) : (
         <div>
+          <h2>Caso Clínico</h2>
+          <div className="caso-clinico">
+            <p>Paciente femenina de 28 años, G2P1A0, con embarazo de 32 semanas por fecha de última menstruación (FUM -17/02/2024. ), acude al servicio de urgencias obstétricas por presentar contracciones uterinas regulares y sensación de presión pélvica.</p>
+            <h3>Antecedentes personales:</h3>
+            <ul>
+              <li>Hipertensión arterial crónica controlada con alfametildopa 500 mg cada 12 horas.</li>
+            </ul>
+            <h3>Antecedentes obstétricos:</h3>
+            <ul>
+              <li>G1: Parto vaginal a término sin complicaciones, recién nacido sano de 3200 gramos.</li>
+              <li>G2 (actual): Controles prenatales irregulares, último control hace 4 semanas. Grupo sanguíneo: O Rh negativo, Coombs indirecto negativo en primer trimestre. Hemoglobina en primer trimestre: 11,2 g/dL. Urocultivo del segundo trimestre: Escherichia coli &gt;100.000 UFC/mL, tratado con cefuroxima por 7 días. Ecografía de segundo trimestre normal. Prueba de tolerancia oral a la glucosa (PTOG) a las 26 semanas: Normal.</li>
+            </ul>
+            <h3>Examen físico:</h3>
+            <ul>
+              <li>Signos vitales: Presión arterial 150/95 mmHg, frecuencia cardíaca 92 lpm, temperatura 37,1°C, frecuencia respiratoria 18 rpm.</li>
+              <li>Altura uterina: 30 cm.</li>
+              <li>Frecuencia cardíaca fetal: 145 lpm.</li>
+              <li>Dinámica uterina: 3 contracciones en 10 minutos, de 30-40 segundos de duración.</li>
+              <li>Genitales externos: Flujo vaginal escaso, no se evidencia sangrado ni líquido amniótico.</li>
+              <li>Especuloscopía: Cuello uterino con 2 cm de dilatación, 50% de borramiento, posición central.</li>
+            </ul>
+            <h3>Se solicitan exámenes de laboratorio:</h3>
+            <ul>
+              <li>Hemograma: Hemoglobina 10,5 g/dL, leucocitos 12.000/mm³ (70% neutrófilos).</li>
+              <li>Proteína C reactiva (PCR): 18 mg/L.</li>
+              <li>Perfil de coagulación: Normal.</li>
+              <li>Proteínas en orina de 24 horas: 450 mg/día.</li>
+            </ul>
+            <p>Se realiza ecografía obstétrica que muestra feto único vivo en presentación cefálica, con peso fetal estimado de 1800 gramos, índice de líquido amniótico normal y placenta normoinserta.</p>
+            <p>Con esta información, se plantean las siguientes preguntas para evaluar el conocimiento de los estudiantes sobre el caso:</p>
+            </div>
           <div className="pregunta-container">
             <div className="pregunta-title">{`Pregunta ${preguntaActual + 1}`}</div>
             <p className="pregunta-text">{preguntasAvanzadas[preguntaActual].pregunta}</p>
@@ -271,19 +177,20 @@ const AdvancedExam = ({ reiniciarExamen }) => {
               </div>
             ))}
           </div>
-          <button className="nav-button" onClick={anteriorPregunta} disabled={preguntaActual === 0}>Anterior</button>
-          {preguntaActual === preguntasAvanzadas.length - 1 ? (
-            <button
-              className="enviar-button"
-              onClick={() => {
-                setEnviarExamen(true);
-              }}
-            >
-              Enviar
+          <div className="nav-buttons">
+            <button className="nav-button" onClick={anteriorPregunta} disabled={preguntaActual === 0}>
+              Anterior
             </button>
-          ) : (
-            <button className="nav-button" onClick={siguientePregunta} disabled={preguntaActual === preguntasAvanzadas.length - 1}>Siguiente</button>
-          )}
+            {preguntaActual === preguntasAvanzadas.length - 1 ? (
+              <button className="enviar-button" onClick={() => { setEnviarExamen(true); }}>
+                Enviar
+              </button>
+            ) : (
+              <button className="nav-button" onClick={siguientePregunta} disabled={preguntaActual === preguntasAvanzadas.length - 1}>
+                Siguiente
+              </button>
+            )}
+          </div>
         </div>
       )}
     </div>
